@@ -4,8 +4,944 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZOI Jewellery</title>
+    <link rel="stylesheet" href="/com.jewellery.zoi/src/resources/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/com.jewellery.zoi/src/controlling/jqueryFile.js"></script>
 </head>
 <body>
-    Hello World!
+    <div id="-head-section" class="head-section">
+        <div class="nav-bar">
+            <div class="nav-bar-left">
+                <div class="nav-bar-left-location">
+                    <img src="/com.jewellery.zoi/images/navigation.png" alt="">
+                    <p>INDIA</p>
+                </div>
+                <div class="nav-bar-left-number">
+                    <p>(+91) 91845-XXXXX</p>
+                </div>
+            </div>
+            <div class="nav-bar-right">
+                <a href="">Gift Card</a>
+                <a href="">Exchange and return</a>
+                <a href="">Order Status</a>
+                <a href="">The Shops</a>
+                <a href="">Delivery</a>
+                <a href="">Pawnshop</a>
+            </div>
+        </div>
+
+        <div id="-control-bar" class="control-bar">
+            <div class="control-bar-catalog">
+                <button><img src="/com.jewellery.zoi//images/category.png"><span>Catalog</span></button>
+            </div>
+            <div class="control-bar-search">
+                <input class="control-bar-search-input" type="text" placeholder="Search with ZOI">
+                <button class="control-bar-search-button" href="#">
+                    <img src="/com.jewellery.zoi/images/search.png">
+                </button>
+            </div>
+            <div class="control-bar-right">
+                <div class="control-bar-right-item">
+                    <a href="" class="control-bar-right-item-cover">
+                        <span class="control-bar-right-item-icon">
+                            <img src="/com.jewellery.zoi/images/user.png" alt="">
+                        </span>
+                        <div id="-control-bar-right-item-text-user" class="control-bar-right-item-text">
+                            SignUp
+                        </div>                
+                    </a>
+                </div>
+                <div class="control-bar-right-item">
+                    <a href="" class="control-bar-right-item-cover">
+                        <span class="control-bar-right-item-icon">
+                            <img src="/com.jewellery.zoi/images/like.png" alt="">
+                        </span>
+                      <div class="control-bar-right-item-text">Saved</div>                
+                    </a>
+                </div>
+                <div class="control-bar-right-item">
+                    <a href="" class="control-bar-right-item-cover">
+                        <span class="control-bar-right-item-icon">
+                            <img src="/com.jewellery.zoi/images/shopping-cart.png" alt="">
+                        </span>
+                      <div class="control-bar-right-item-text">Cart</div>                
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-banner">
+            <p>ZOI Jewellery</p>
+        </div>
+        <div class="header-slide-show">
+            <img src="/com.jewellery.zoi/images/silde2.jpg" alt="" class="header-slide-show-item">
+            <img src="/com.jewellery.zoi/images/slide1.jpg" alt="" class="header-slide-show-item">
+        </div>
+        <div class="slideshow-home-control">
+            <div class="slideshow-home-prev-control" onclick="goPrevItem()">&#8592;</div>
+            <div class="slideshow-home-next-control" onclick="goNextItem()">&#8594;</div>
+        </div>
+        
+    </div>
+    
+    <div class="special-scetion-heading">
+        <p>Especially for you</p>
+    </div>
+    
+    <div class="special-section-content">
+        <div class="holding">
+            <div class="inner-holding">
+                <div class="special-section-content-panel">
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a1.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold ring with diamonds
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 6200
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a2.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver earrings with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 3100<span><sub>5500</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a3.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver chain
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 2590<span><sub>5000</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a4.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver necklace with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 1690<span><sub>3080</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="holding">
+            <div class="inner-holding">
+                <div class="special-section-content-panel">
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a5.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold ring with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 20,100<span><sub>32,700</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a6.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver ring with cubic zirconia and alpanite
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 2800<span><sub>3100</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a7.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Golden cross pendant
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 4850<span><sub>8500</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a8.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver earrings with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 1800<span><sub>3500</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="holding">
+            <div class="inner-holding">
+                <div class="special-section-content-panel">
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a9.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Siver chain
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 4590<span><sub>8000</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a10.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold earrings wiht tpoaz
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 3100<span><sub>5500</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a11.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Silver earrings wiht alpanite
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 3000<span><sub>4950</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a12.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Golden ring
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 18,500<span><sub>28,300</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="holding">
+            <div class="inner-holding">
+                <div class="special-section-content-panel">
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a13.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold ring with emeralds and diamonds
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 21,600<span><sub>35,000</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a14.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold chain
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 39,000<span><sub>48,500</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a15.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold ring with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 14,990
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-section-content-panel-item">
+                        <div class="special-section-content-panel-item-image">
+                            <img src="/com.jewellery.zoi/images/home-page-jewellery/a16.jpg" alt="">
+                        </div>
+                        <div class="special-section-content-panel-item-details">
+                            <p class="special-section-content-panel-item-details-info">
+                                Gold ring with cubic zirconia
+                            </p>
+                            <p class="special-section-content-panel-item-details-price">
+                                INR 9,450<span><sub>19,000</sub></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-home-control">
+        <div class="slideshow-home-prev-control" onclick="goPrevPanel()">&#8592;</div>
+        <div class="slideshow-home-next-control" onclick="goNextPanel()">&#8594;</div>
+    </div>
+
+    <div class="slide-link-div">
+        <div class="slide-link-div-packet">
+            <div class="slide-link-div-item">
+                <a href="">
+                    <img src="/com.jewellery.zoi/images/s1.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide-link-div-item">
+                <a href="">
+                    <img src="/com.jewellery.zoi/images/s2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-home-control">
+        <div class="slideshow-home-prev-control" id="-slide-link-div-leftBtn">&#8592;</div>
+        <div class="slideshow-home-next-control" id="-slide-link-div-rightBtn">&#8594;</div>
+    </div>
+
+    <div class="banner-links">
+        <div class="banner-links-item">
+            <a href="">
+                <img src="/com.jewellery.zoi/images/q1.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="banner-links">
+        <div class="banner-links-item">
+            <a href="">
+                <img src="/com.jewellery.zoi/images/q2.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="special-scetion-heading">
+        <p>Best Price</p>
+    </div>
+    
+    <div id="-best-price-section" class="slide-moving-section">
+        
+    <div class="slide-moving-content-panels">
+            <div id="-best-price-slide-holding-packet" class="slide-holding-packet">
+                <div class="slide-holding-panel">
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/best-price/a1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 14,990
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/best-price/a2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 14,250
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/best-price/a3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 7,890
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/best-price/a4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 14,990
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="-best-price-toggle-div">
+                <div class="slide-holding-packet">
+                    <div class="slide-holding-panel">
+                        <div class="slide-item">
+                            <div class="slide-item-image">
+                                <a href="">
+                                    <img src="/com.jewellery.zoi/images/best-price/a5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slide-item-details">
+                                <p class="slide-item-details-info">
+                                    DIAMONDS OF YAKUTIA
+                                </p>
+                                <p class="slide-item-details-price">
+                                    INR 22,500
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-item-image">
+                                <a href="">
+                                    <img src="/com.jewellery.zoi/images/best-price/A6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slide-item-details">
+                                <p class="slide-item-details-info">
+                                    DIAMONDS  OF YAKUTIA
+                                </p>
+                                <p class="slide-item-details-price">
+                                    INR 30,000
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-item-image">
+                                <a href="">
+                                    <img src="/com.jewellery.zoi/images/best-price/a7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slide-item-details">
+                                <p class="slide-item-details-info">
+                                    MOSCOW CHAIN KNITTING PLANT
+                                </p>
+                                <p class="slide-item-details-price">
+                                    INR 19,990
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-item-image">
+                                <a href="">
+                                    <img src="/com.jewellery.zoi/images/best-price/A8.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slide-item-details">
+                                <p class="slide-item-details-info">
+                                    DIAMONDS  OF YAKUTIA
+                                </p>
+                                <p class="slide-item-details-price">
+                                    INR 20,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-toggling-button-class">
+                <div id="-best-price-toogle-button" class="slide-toggling-button">
+                    <p>----- More / Less -----</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-scetion-heading">
+        <p>New Items</p>
+    </div>
+
+    <div class="slide-moving-content-panels">
+        <div id="-new-items-slide-holding-packet" class="slide-holding-packet">
+            <div class="slide-holding-panel">
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/new-items/a1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            Silver necklace with ceramics
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 3,500
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/new-items/a2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            MOSCOW CHAIN KNITTING PLANT
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 11,000
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/new-items/a3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            MOSCOW CHAIN KNITTING PLANT
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 12,700
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/new-items/a4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            DIAMONDS  OF YAKUTIA
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 11,200
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="-new-item-toggle-div">
+            <div class="slide-holding-packet">
+                <div class="slide-holding-panel">
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 16,750
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 3,200
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 9,999
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 9,990
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-holding-packet">
+                <div class="slide-holding-panel">
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 22,800
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 24,990
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 21,990
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/new-items/a12.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                DIAMONDS  OF YAKUTIA
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 29,990
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-toggling-button-class">
+            <div id="-new-item-toogle-button" class="slide-toggling-button">
+                <p>----- More / Less -----</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-link-div">
+        <div class="slide-link-div-packet">
+            <div class="slide-link-div-item">
+                <a href="">
+                    <img src="/com.jewellery.zoi/images/slide-links/a1.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide-link-div-item">
+                <a href="">
+                    <img src="/com.jewellery.zoi/images/slide-links/a2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-scetion-heading">
+        <p>Hurry up to buy</p>
+    </div>
+
+    <div class="slide-moving-content-panels">
+        <div id="-hurry-buy-slide-holding-packet" class="slide-holding-packet">
+            <div class="slide-holding-panel">
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/hurry-buy/a1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            kids
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 9,590
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/hurry-buy/a2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            ZOI
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 2,500
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/hurry-buy/a3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            MOSCOW CHAIN KNITTING PLANT
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 17,990
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="slide-item-image">
+                        <a href="">
+                            <img src="/com.jewellery.zoi/images/hurry-buy/a4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slide-item-details">
+                        <p class="slide-item-details-info">
+                            MOSCOW CHAIN KNITTING PLANT
+                        </p>
+                        <p class="slide-item-details-price">
+                            INR 22,570
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="-hurry-buy-toggle-div">
+            <div class="slide-holding-packet">
+                <div class="slide-holding-panel">
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 10,160
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 6,750
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 4,450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                MOSCOW CHAIN KNITTING PLANT
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 17,990
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-holding-packet">
+                <div class="slide-holding-panel">
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 2,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 6,490
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 4,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-item-image">
+                            <a href="">
+                                <img src="/com.jewellery.zoi/images/hurry-buy/a12.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="slide-item-details">
+                            <p class="slide-item-details-info">
+                                ZOI
+                            </p>
+                            <p class="slide-item-details-price">
+                                INR 6,800
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-toggling-button-class">
+            <div id="-hurry-buy-toogle-button" class="slide-toggling-button">
+                <p>----- More / Less -----</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/com.jewellery.zoi/src/controlling/main.js"></script>
 </body>
 </html>
