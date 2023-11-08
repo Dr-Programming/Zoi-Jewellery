@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/com.jewellery.zoi/src/resources/catalog.css">
+    <script src="/com.jewellery.zoi/src/controlling/catalog.js"></script>
+</head>
+<body>
+    <h1>Catalog</h1>
+
+    <div class="list-packing">
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-products">Type of Products &#8595;</p>
+            </div>
+            <div id="-type-of-products-list" class="catagory-sublist">
+                <ul>
+                    <li class="catagory-sublist-mainList"><a href="/com.jewellery.zoi/src/main/catalog/earing.html" target="mainFrame">Earrings</a></li>
+                    <li class="catagory-sublist-mainList"><a href="/com.jewellery.zoi/src/main/catalog/rings.html" target="mainFrame">Rings</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Bracelets</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Pendants</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Cross Pendants</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Chains</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Necklace</a></li>
+                    <li class="catagory-sublist-mainList"><a href="">Watch</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-material">Material &#8595;</p>
+            </div>
+            <div id="-type-of-material-list" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="material" id="material-1"><label for="material-1"> Gold</label></li>
+                    <li><input type="radio" name="material" id="material-2"><label for="material-2"> Sliver</label></li>
+                    <li><input type="radio" name="material" id="material-3"><label for="material-3"> Pink Gold</label></li>
+                    <li><input type="radio" name="material" id="material-4"><label for="material-4"> White Gold</label></li>
+                    <li><input type="radio" name="material" id="material-5"><label for="material-5"> Yellow Gold</label></li>
+                    <li><input type="radio" name="material" id="material-6"><label for="material-6"> Jewellery Steel</label></li>
+                    <li><input type="radio" name="material" id="material-7"><label for="material-7"> Platinum</label></li>
+                    <li><input type="radio" name="material" id="material-8"><label for="material-8"> Genuine Leather</label></li>
+                    <li><input type="radio" name="material" id="material-9"><label for="material-9"> Rubber</label></li>
+                </ul>
+            </div>
+        </div>
+     
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-insert">Insert &#8595;</p>
+            </div>
+            <div id="-type-of-insert-list" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="insert" id="insert-1"><label for="insert-1"> Diamond</label></li>
+                    <li><input type="radio" name="insert" id="insert-2"><label for="insert-2"> Cubic Zirconia</label></li>
+                    <li><input type="radio" name="insert" id="insert-3"><label for="insert-3"> Pomegranate</label></li>
+                    <li><input type="radio" name="insert" id="insert-4"><label for="insert-4"> Topaz</label></li>
+                    <li><input type="radio" name="insert" id="insert-5"><label for="insert-5"> Sapphire</label></li>
+                    <li><input type="radio" name="insert" id="insert-6"><label for="insert-6"> Emerald</label></li>
+                    <li><input type="radio" name="insert" id="insert-7"><label for="insert-7"> Amethyst</label></li>
+                    <li><input type="radio" name="insert" id="insert-8"><label for="insert-8"> Ruby</label></li>
+                    <li><input type="radio" name="insert" id="insert-9"><label for="insert-9"> Without Insert</label></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-color">Color Material &#8595;</p>
+            </div>
+            <div id="-type-of-color-list" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="color" id="color-2"><label for="color-2"> Pink</label></li>
+                    <li><input type="radio" name="color" id="color-3"><label for="color-3"> White</label></li>
+                    <li><input type="radio" name="color" id="color-4"><label for="color-4"> Yellow</label></li>
+                    <li><input type="radio" name="color" id="color-1"><label for="color-1"> Green</label></li>
+                    <li><input type="radio" name="color" id="color-5"><label for="color-5"> Brown</label></li>
+                    <li><input type="radio" name="color" id="color-6"><label for="color-6"> Red</label></li>
+                    <li><input type="radio" name="color" id="color-7"><label for="color-7"> Black</label></li>
+                    <li><input type="radio" name="color" id="color-8"><label for="color-8"> Multicolored</label></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-sample">Carat &#8595;</p>
+            </div>
+            <div id="-type-of-sample-list" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="sapmle" id="sapmle-2"><label for="sapmle-2"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-3"><label for="sapmle-3"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-4"><label for="sapmle-4"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-1"><label for="sapmle-1"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-5"><label for="sapmle-5"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-6"><label for="sapmle-6"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-7"><label for="sapmle-7"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-8"><label for="sapmle-8"> Product</label></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-sample-2">Carat of Diamonds &#8595;</p>
+            </div>
+            <div id="-type-of-sample-list-2" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="sapmle" id="sapmle-2"><label for="sapmle-2"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-3"><label for="sapmle-3"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-4"><label for="sapmle-4"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-1"><label for="sapmle-1"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-5"><label for="sapmle-5"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-6"><label for="sapmle-6"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-7"><label for="sapmle-7"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-8"><label for="sapmle-8"> Product</label></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="catagory">
+            <div class="catagory-title">
+                <p id="-type-of-sample-3">Type of Cuts &#8595;</p>
+            </div>
+            <div id="-type-of-sample-list-3" class="catagory-sublist">
+                <ul>
+                    <li><input type="radio" name="sapmle" id="sapmle-2"><label for="sapmle-2"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-3"><label for="sapmle-3"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-4"><label for="sapmle-4"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-1"><label for="sapmle-1"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-5"><label for="sapmle-5"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-6"><label for="sapmle-6"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-7"><label for="sapmle-7"> Product</label></li>
+                    <li><input type="radio" name="sapmle" id="sapmle-8"><label for="sapmle-8"> Product</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

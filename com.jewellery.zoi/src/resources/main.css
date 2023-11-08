@@ -468,3 +468,66 @@
 .slide-toggling-button:hover{
     border: 1px solid gray;
 }
+
+
+.bottom-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 30px;
+}
+
+.bottom-info-heading p{
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.bottom-info-content p{
+    font-family: 'poppins';
+    font-size: 12px;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column ul{
+    list-style: none;
+}
+
+.column a{
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.column h2{
+    color: grey;
+    font-family: 'poppins';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.column li{
+    font-size: 17px;
+}
+
+#footer-main-column a{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+#footer-main-column a:hover, .column a:hover{
+    color: red;;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins';
+}
+
+body{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: larger;
+    padding-left: 15px;
+}
+
+.four-card-holder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 5px
+}
+
+.card-packing{
+    width: 270px;
+    height: 100%;
+}
+
+.card-image{
+    width: 270px;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.card-details{
+    padding: 5px;
+}
+
+.card-details-money{
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.card-details-info{
+    font-size: larger;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 1s;
+}
+
+.card-details-rating{
+    font-size: medium;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: orange;
+    transition: 1.5s;
+}
+
+.card-details-rating span{
+    font-size: smaller;
+    color: black;
+    transition: 1.5s;
+}
+
+/* .card-image:hover ~ .card-details{
+    background-color: black;
+    color: white;
+} */
+
+.card-image:hover ~ .card-details .card-details-money{
+    /* transition: .5s; */
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-image:hover ~ .card-details .card-details-info{
+    /* transition: 1s; */
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.card-image:hover ~ .card-details .card-details-rating{
+    /* transition: 1.5s; */
+    text-align: center;
+    background-color: black;
+    color: yellow;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-image:hover ~ .card-details .card-details-rating span{
+    /* transition: 1.5s; */
+    text-align: center;
+    color: white;
+}

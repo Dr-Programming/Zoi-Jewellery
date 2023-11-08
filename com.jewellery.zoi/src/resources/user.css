@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.signup-heading{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.login-div, .signup-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    padding: 40px;
+    border-radius: 10px;
+}
+.login-div p, .signup-div p{
+    font-family: 'poppins';
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+}
+.inputDiv, .inputDiv-signup{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv label, .inputDiv-signup label{
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.inputDiv input, .inputDiv-signup input{
+    font-size: large;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+.submitButton button{
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    color: white;
+    border: 2px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .2s linear;
+}
+
+.submitButton button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* border: 2px solid black; */
+}
+
+.submitButton p{
+    font-size: smaller;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submitButton a{
+    text-decoration: none;
+    color: black;
+}
+
+.submitButton a:hover{
+    text-decoration: underline;
+    color: blue;
+}
